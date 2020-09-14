@@ -1,3 +1,25 @@
+// let a = 5,
+//     b = a;
+//
+// b = b + 5;
+//
+// console.log(b);
+// console.log(a);
+//
+// //
+//
+// const obj = {
+//     a: 5,
+//     b: 1
+// };
+//
+// const copy = obj;// cсылка на существующий объект
+// copy.a = 10;
+//
+// console.log(obj);
+// console.log(copy);
+
+
 //копирование объектов поверхностная первого уровня, не глубокая!!!!
 function copy(mainObj) {
     let objCopy = {};
