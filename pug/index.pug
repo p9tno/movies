@@ -1,4 +1,66 @@
 extends layout/layout.pug
 
 block content
-    h1 Java scrirt new
+    h1 block 2
+    h2 classList, делегирование
+
+    .btn-block#first
+        button.blue.some(type="submit") Submit
+        button Submit
+        button Submit
+        button Submit
+        button Submit
+        button Submit
+
+
+    h2 tabs only js
+
+    .tabcontainer
+        .tabheader
+            .tabheader__list
+                .tabheader__item.tabheader__item_active 1
+                .tabheader__item 2
+                .tabheader__item 3
+                .tabheader__item 4
+
+        .tabcontent  Lorem.
+        .tabcontent  Lorem ipsum.
+        .tabcontent  Lorem ipsum dolor.
+        .tabcontent  Lorem ipsum dolor sit.
+
+    h2 setTimeout
+
+    button.btn Animation
+    .wrapper
+        .box
+
+    h2 Data
+    .promotion__timer
+        .title Осталось до конца акции:
+        .timer
+            .timer__block
+                span#days 12
+                |                         дней
+            .timer__block
+                span#hours 20
+                |                         часов
+            .timer__block
+                span#minutes 56
+                |                         минут
+            .timer__block
+                span#seconds 20
+                |                         секунд
+
+    h2 button for modal
+    button(data-modal).btn.btn_dark Связаться с нами
+    button(data-modal).btn.btn_white Связаться с нами
+    h2 modal
+    .modal
+        .modal__dialog
+            .modal__content
+                form(action='#')
+                    .modal__close(data-close) ×
+                    .modal__title Мы свяжемся с вами как можно быстрее!
+                    input.modal__input(required='', placeholder='Ваше имя', name='name', type='text')
+                    input.modal__input(required='', placeholder='Ваш номер телефона', name='phone', type='phone')
+                    button.btn.btn_dark.btn_min Перезвонить мне
